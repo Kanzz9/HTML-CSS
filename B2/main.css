@@ -1,7 +1,9 @@
-#First_heading{
-    color: brown;
-}
-.second_heading{
-    color: green;
-    font-size: 14px;
+
+:root {
+    --text-color: red;
+
+} /*  lớp giả */
+
+h1{
+    color: var(--text-color);
 }
