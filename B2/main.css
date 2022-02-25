@@ -3,7 +3,26 @@
     --text-color: red;
 
 } /*  lớp giả */
-
+html{
+    font-size: 20px;
+}
 h1{
     color: var(--text-color);
+    font-size: 1rem;
+}
+
+h1:hover{
+    color: aqua;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0, rgba(255,255,0,0.5),rgba(0,0,255,0.5)),
+                        url(https://bloganh.net/wp-content/uploads/2021/03/chup-anh-dep-anh-sang-min.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.box:active{
+    background-color: brown;
 }
