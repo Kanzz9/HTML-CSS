@@ -1,0 +1,65 @@
+
+:root {
+    --text-color: red;
+
+} /*  lớp giả */
+html{
+    font-size: 20px;
+}
+h1{
+    color: var(--text-color);
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-100%)translateX(-100%);
+    /* border-left: 2px solid #333; */
+    color: blue;
+}
+
+/* h1::after{
+    position: absolute;
+    content: "";
+    left: -10px;
+    border-left: 3px solid #333;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+h1::before{
+    position: absolute;
+    content: "";
+    left:-20px;
+    border-left: 3px solid #333;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+h1:hover{
+    color: aqua;
+}
+.box{
+    background-color: orange;
+    width: 100%;
+    height: 100px;
+    /* text-align: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+     */
+     position: relative;
+    
+}
+.box:active{
+    background-color: brown;
+}
+
+/* .img_B{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://www.w3schools.com/w3images/sanfran.jpg),url('/HTML-CSS/img/20x20.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
