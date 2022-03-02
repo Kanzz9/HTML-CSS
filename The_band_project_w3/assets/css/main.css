@@ -5,24 +5,132 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #main {
 
 
 }
 
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46.492px;
+    padding: 0 24px;
+    display: block;
+    
+}
+#nav .nav_down{
+
+    font-size:  14px;
+}
+#nav > li:hover .subnav{
+
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
 #header {
-
-
+    height: 46.5px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
+#header .search {
+    cursor: pointer;
+    float: right;
+    padding: 0 21px;
+    
+    /* display: inline-block; */
+}
+#header .search a{
+    text-decoration: none;
+}
+#header .search:hover {
+    color:#fff;
+    background-color: #f44336;
+}
+#header .nav_search {
+    line-height: 46px;
+    color: #fff;
+    /* text-decoration: none; */
+}
 #slider {
-
-
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/HTML-CSS/The_band_project_w3/assets/img/chicago.jpg) top center / cover no-repeat;
+    font-family: Verdana,sans-serif;
+    
 }
 
+#slider .text{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#slider .text_heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+#slider .text_description{
+    font-size: 15px;
+}
 #content {
 
-
+    height: 1000px;
+    background-color: #fff;
+    
 }
 
 #footer {
