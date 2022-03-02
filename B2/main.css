@@ -7,8 +7,11 @@ html{
     font-size: 20px;
 }
 h1{
+
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 3rem;
+    position: relative;
+    bottom: 100px;
 }
 
 h1:hover{
@@ -30,3 +33,4 @@ h1:hover{
 .box:active{
     background-color: brown;
 }
+
