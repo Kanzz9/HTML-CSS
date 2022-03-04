@@ -132,7 +132,57 @@ html{
     background-color: #fff;
     
 }
-
+#content  .content_section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+#content .content_heading{
+    text-align: center;
+    margin-bottom: 25px ;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+#content .sub_heading{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 30px ;
+    opacity: 0.6;
+}
+#content .about_content{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+#content .member{
+    margin-top: 32px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .member_item{
+    display: inline-block;
+    text-align: center;
+    width: 256px;
+    height: 206px;
+}
+#content .member_item .name_member{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+}
+#content .member_item .member_img{
+    width: 153.594px;
+    height: 153.594px;
+    margin-bottom: 15px;
+    
+    text-align: center;
+    border-radius: 4px ;
+}
 #footer {
 
 
