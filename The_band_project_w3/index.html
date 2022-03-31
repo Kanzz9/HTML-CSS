@@ -81,7 +81,7 @@
                             <h4>New York</h4>
                             <p class="time">Fri 27 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="buy_button">Buy Tickets</a>
+                            <button class="buy_button js_buy_button">Buy Tickets</button>
                         </div>
                     </div>
                     
@@ -92,7 +92,7 @@
                             <h4>Paris</h4>
                             <p class="time">Sat 28 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="buy_button">Buy Tickets</a>
+                            <button class="buy_button js_buy_button">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="address_item">
@@ -102,7 +102,7 @@
                             <h4>San Francisco</h4>
                             <p class="time">Sun 29 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="buy_button">Buy Tickets</a>
+                            <button class="buy_button js_buy_button">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -122,5 +122,63 @@
             
         </div>
     </div>
+
+    <div class="modal js_modal">
+        <div class="modal_container js_modalcontainer">
+            <div class="modal_close js_modalclose">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal_header">
+                <i class="modal_bag ti-bag"></i>
+                Tickets
+            </header>
+            <div class="modal_body">
+                <label for="Quantity" class="modal_label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="Quantity" type="text" class="modal_input" placeholder="How many?">
+
+                <label for="text_Email" class="modal_label">
+                    <i class="ti-user"></i>
+                    Send To   
+                </label>
+                <input id="text_Email" type="text" class="modal_input" placeholder="Enter email...">
+                <button id="modal_button">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>   
+            
+            <footer class="modal_footer">
+                <p class="modal_help">Need <a href="#" class="help">help?</a></p>
+            </footer>
+            <!-- <div class="clear"></div> -->
+
+        </div>
+    </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js_buy_button')
+        const modal = document.querySelector('.js_modal')
+        const modalContainer = document.querySelector('.js_modalcontainer')
+        const modalClose = document.querySelector('.js_modalclose')
+        function showBuyButtons()
+        {
+            modal.classList.add('open')
+        }
+        function hideBuyButton(){
+            modal.classList.remove("open")
+        }
+        for(const buyBtn of buyBtns)
+        {
+            buyBtn.addEventListener('click',showBuyButtons)
+        }
+        modalClose.addEventListener('click',hideBuyButton)
+
+        modal.addEventListener('click',hideBuyButton)
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>

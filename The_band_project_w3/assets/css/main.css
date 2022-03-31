@@ -274,9 +274,108 @@ html{
 }
 .address_section .buy_button:hover{
     background-color: #757575;
-    color: #000;
+    color: #333;
 }
 #footer {
 
 
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.open{
+    display: flex;
+}
+.modal .modal_container{
+
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalIn ease 0.5s;
+}
+.modal .modal_container .modal_header{
+    background-color: #009688;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.modal_bag{
+    margin-right: 16px;
+}
+.modal_close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal_close:hover{
+    opacity: 1;
+}
+.modal_body {
+    padding: 16px;
+}
+.modal_label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.modal_input {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    /* height: 45px; */
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 24px;
+}
+#modal_button {
+    background: #009688;
+    border: none;
+    /* display: flex; */
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 16;
+    padding: 18px;
+    cursor: pointer;
+}
+#modal_button:hover{
+    background-color: #ccc;
+    color: #333;
+}
+p.modal_help {
+    float: right;
+    padding-right: 13px;
+    padding: 16px;
+}
+.help {
+    color: #2196F3;
+}
+@keyframes modalIn {
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
